@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <script>
+    var altura = parseInt(prompt("Informe sua altura em CM"))
+    var peso = parseInt(prompt("informe seu peso"))
+    altura2 = altura / 50; 
+    var imc = peso / altura2;
+
+//Menor que 18,5 = abaixo do peso.
+    if(imc <= 18.5){ 
+        alert("Abaixo do peso | Seu IMC é " + imc);
+
+    } 
+    //Entre 18,5 e 24,9 = peso normal.
+    else if (imc > 18.5 && imc <= 24.9 ){
+        alert(" Parabéns está no peso normal | Seu IMC é " + imc);
+
+    }
+    //Entre 25 e 29,9 = sobrepeso
+    else if (imc > 25 && imc <= 29.9 ){
+        alert("Pré-Obeso " + imc);
+
+    }
+    //Entre 30 e 34,99 = obesidade grau I.
+    else if(imc > 30 && imc <= 34.99 ){
+        alert("Obesidade Grau I | Seu IMC é " + imc);
+
+    }
+    //Entre 35 e 39,99 = obesidade grau II (severa).
+    else if(imc > 35 && imc <= 39.99 ){
+        alert(" Obesidade Grau II " + imc);
+
+    }
+    //Acima de 40 = obesidade grau III (mórbida).
+    else if(imc > 40){
+        alert("Obesidade Grau III | Seu IMC é " + imc);
+
+    }
+    </script>
+</body>
+
+</html> 
